@@ -3,7 +3,7 @@ function IsEnter()
 {
 	const Original_Data = document.getElementById("Searchbar");
 
-	// Call "Studybyte_search" function.
+	// Call "KudoSearch_search" function.
 	// If Enter key is pressed and search query is not an empty string.
 	if (Original_Data.value != "")
 	{
@@ -68,8 +68,8 @@ function TryToSearch()
 			else if (SearchTags(FormattedQuery, "pdfdrive?", "https://www.pdfdrive.com/search?q="));
 			else if (SearchTags(FormattedQuery, "ddg?", "https://duckduckgo.com/?q="));
 			else if (SearchTags(FormattedQuery, "gs?", "https://scholar.google.com/scholar?q="));
-			else if (FormattedQuery == "studybyte.old") window.location = "./includes/Studybyte.Old.html";
-			else if (FormattedQuery == "studybyte in 2007") alert("Back in 2007 the Creator of Studybyte was born, but the Idea of Studybyte was not born yet.");
+			else if (FormattedQuery == "KudoSearch.old") window.location = "./includes/KudoSearch.Old.html";
+			else if (FormattedQuery == "KudoSearch in 2007") alert("Back in 2007 the Creator of KudoSearch was born, but the Idea of KudoSearch was not born yet.");
 			else if ((FormattedQuery.includes("coin") && FormattedQuery.includes("flip")) || (FormattedQuery.includes("coin") && FormattedQuery.includes("toss")))
 			{
 				let Random_num = Math.round(Math.random());
@@ -105,7 +105,7 @@ function GetResults()
 	// Retrive the query and Change the Title.
 	const OriginalQuery = localStorage.getItem("OriginalQuery");
 	const FormattedQuery = localStorage.getItem("FormattedQuery");
-	document.title = OriginalQuery + " - Studybyte";
+	document.title = OriginalQuery + " - KudoSearch";
 
 	// Peform basic arithmetic calculations.
 	let CalculatedAns = 0;
@@ -140,7 +140,7 @@ function GetResults()
 	// https://stackoverflow.com/questions/7848004/get-column-from-a-two-dimensional-array/63860734
 	const arrayColumn = (arr, n) => arr.map(x => x[n]);
 
-	// Color is the main algorithm behind searching and giving results for query in Studybyte search engine.
+	// Color is the main algorithm behind searching and giving results for query in KudoSearch search engine.
 	ListOfSites = arrayColumn(SearchIndex, 0);
 	let StartTime = performance.now();
 
@@ -260,7 +260,7 @@ function Showerror()
 	else
 	{
 		document.getElementById("Searchbar").value = OriginalQuery;
-		document.title = OriginalQuery + " - Studybyte"; // Change the title of the page.
+		document.title = OriginalQuery + " - KudoSearch"; // Change the title of the page.
 	}
 }
 

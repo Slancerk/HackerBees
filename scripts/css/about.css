@@ -2,16 +2,29 @@ body{
 
     background-color: black;
     color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: block;
+    font-family:sans-serif;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
 }
 
+.sec1{
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 section{
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.last{
+    display: flex;
+    justify-content: center;
+
 }
