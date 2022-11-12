@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root
+{
+    --black: #000000;
+    --white: #f9f9f9;
+    --red: #ff5959;
+    --ash: #222020;
+    --green: #1eff00;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body
+{
+    font-family: "Roboto";
+    color: var(--white);
+    /* background-image: url("../../res/Background/Background.png"); */
+    background-color: var(--black);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+nav ul
+{
+    display: flex;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+nav ul li
+{
+    margin: 20px 20px;
+    cursor: pointer;
+}
+
+nav ul li a
+{
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav ul li a:hover
+{
+    color: var(--red);
+    transition: 0.2s;
+}
+
+section h3
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -100px;
+    cursor: default;
+    font-size: 75px;
+    font-weight: 100;
+    text-align: center;
+}
+
+#Searchbar
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-left: 12px;
+    font-size: 15px;
+    color: var(--white);
+    background: var(--ash);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 700px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+#Searchbar:hover
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+#Searchbar:focus
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+#Searchbtn
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    color: var(--black);
+    background: var(--green);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    margin-top: 70px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#Searchbtn:hover
+{
+	box-shadow: 0px 1px 5px rgba(9, 255, 0,5);
+	transition: 0.2s;
+}
+
+#Searchbtn:focus
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+/* This will make this site responsive for mobile devices */
+@media only screen and (max-width: 500px)
+{
+    nav ul
+    {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    section h3
+    {
+        font-size: 50px;
+    }
+
+    #Searchbar
+    {
+        font-size: 15px;
+        width: 300px;
+        height: 40px;
+    }
+
+    #Searchbtn
+    {
+        font-size: 15px;
+        width: 150px;
+        height: 40px;
+        margin-top: 50px;
+    }
+}

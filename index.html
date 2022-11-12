@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="KudoSearch is a Search Engine completely developed from scratch to help Students, find Study material easily on the Internet.">
+	<meta name="keywords" content="KudoSearch, search engine, github, light-lens, study material, study content, virtual library, study byte, study search engine">
+	<meta name="robots" content="INDEX, FOLLOW">
+    <title>KudoSearch</title>
+
+    <!-- <link rel="icon" href="./res/Icons/KudoSearch.png"> -->
+    <link rel="stylesheet" href="./scripts/css/index.css">
+</head>
+<body>
+    <script src="./scripts/js/Color.js"></script>
+    <script src="./scripts/js/Kudosearch.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a>HackerBees</a></li>
+                <li><a title="Follow us on Github." href="https://github.com/Slancerk/HackerBees" target="_blank">About us</a></li>
+                <li><a title="KudoSearch on Github." href="https://github.com/Slancerk/HackerBees" target="_blank">Github</a></li>
+                <li><a title="Search History." href="./history.html">History</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h3>KudoSearch</h3>
+            <input type="text" placeholder="Type to search..." id="Searchbar" onkeydown="IsEnter();" autocomplete="off" autofocus>
+            <input type="button" value="Search" id="Searchbtn" onclick="TryToSearch();">
+        </div>
+        <script> FocusSearchbarOnEsc(); </script>
+    </section>
+</body>
+</html>

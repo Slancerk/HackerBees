@@ -1,0 +1,395 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+:root
+{
+    --link: #8c8cfa;
+    --visited: #ac77e7;
+    --black: #000000;
+    --white: #f9f9f9;
+    --red: #ff5959;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: "Roboto";
+    color: var(--white);
+    background-image: url("../../res/Background/Background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+::-webkit-scrollbar
+{
+    width: 7px;
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #474747;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+    background: #575757;
+}
+
+.SearchAtTop
+{
+    display: flex;
+    font-weight: 400;
+    margin: 10px 10px;
+}
+
+.SearchAtTop a
+{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.SearchAtTop a:hover
+{
+    color: var(--red);
+    transition: 0.2s;
+}
+
+.SearchAtTop #Searchbar
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    font-size: 15px;
+    color: var(--white);
+    background: var(--black);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 700px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.SearchAtTop #Searchbar:hover
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+.SearchAtTop #Searchbar:focus
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+.SearchAtTop #Searchbtn
+{
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+    color: var(--white);
+    background: var(--black);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.SearchAtTop #Searchbtn:hover
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+.SearchAtTop #Searchbtn:focus
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+#NumOfResults
+{
+    margin-top: 10px;
+    cursor: default;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#Results
+{
+    margin-top: 125px;
+}
+
+#Results #CalculatedAns
+{
+    display: inline-block;
+	color: var(--link);
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+#Results #CalculatedAns:hover
+{
+	text-decoration: underline;
+    font-size: 24px;
+	transition: 0.2s;
+}
+
+#Results li
+{
+    margin-left: 50px;
+    margin-bottom: 125px;
+}
+
+#Results li a:link
+{
+	text-decoration: none;
+	color: var(--link);
+	cursor: pointer;
+	font-size: 20px;
+	transition: 0.2s;
+}
+
+#Results li a:visited
+{
+	color: var(--visited);
+}
+
+#Results li a:hover
+{
+	text-decoration: underline;
+	transition: 0.2s;
+}
+
+#Results li a:active
+{
+	color: #99bae6;
+}
+
+#ScrollToTop
+{
+    opacity: 0;
+	visibility: hidden;
+	color: var(--white);
+	background-color: var(--black);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+#ScrollToTop:hover
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+#ShowMore
+{
+    opacity: 0;
+	visibility: hidden;
+    font-size: 25px;
+    font-weight: normal;
+	color: var(--white);
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transition: 0.2s;
+    position: relative;
+    top: 500%;
+    left: 50%;
+    transform: translate(-50%, -500%);
+    transition: 0.2s;
+}
+
+#ShowMore:hover
+{
+	color: var(--red);
+    transition: 0.2s;
+}
+
+.Error
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin-top: 300px;
+    cursor: default;
+    font-size: 50px;
+    font-weight: normal;
+    transition: 0.2s;
+}
+
+.Error:hover
+{
+    color: var(--red);
+    transition: 0.2s;
+}
+
+.Error2
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin-top: 20px;
+    cursor: default;
+    font-size: 40px;
+    font-weight: normal;
+    transition: 0.2s;
+}
+
+.Error2:hover
+{
+    color: #2c2c2c;
+    background: var(--white);
+    transition: 0.2s;
+}
+
+#ListHistory
+{
+    display: inline-block;
+    margin-top: 125px;
+}
+
+#ListHistory li
+{
+    margin-left: 50px;
+    margin-bottom: 125px;
+	color: var(--visited);
+	cursor: pointer;
+	font-size: 22px;
+	transition: 0.2s;
+}
+
+#ListHistory li:hover
+{
+	text-decoration: underline;
+	transition: 0.2s;
+}
+
+#NoSearchHistory
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    font-weight: 100;
+    font-size: 50px;
+    transition: 0.2s;
+}
+
+#NoSearchHistory:hover
+{
+    color: var(--red);
+    transition: 0.2s;
+}
+
+#ClearHistory
+{
+    font-size: 15px;
+	color: var(--white);
+	background-color: var(--black);
+	border: none;
+	outline: none;
+	border-radius: 5px;
+    width: 135px;
+    height: 35px;
+	cursor: pointer;
+    margin-top: 7px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.2s;
+}
+
+#ClearHistory:hover
+{
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+	transition: 0.2s;
+}
+
+/* This will make this site responsive for mobile devices */
+@media only screen and (max-width: 500px)
+{
+    .SearchAtTop a
+    {
+        display: none;
+        visibility: hidden;
+    }
+
+    .SearchAtTop #Searchbar
+    {
+        float: left;
+        font-size: 15px;
+        width: 220px;
+        height: 40px;
+    }
+
+    .SearchAtTop #Searchbtn
+    {
+    
+        font-size: 17px;
+        width: 100px;
+        height: 40px;
+    }
+
+    .Error
+    {
+        font-size: 30px;
+    }
+
+    .Error2
+    {
+        font-size: 17px;
+    }
+
+    #Results
+    {
+        margin-bottom: 150px;
+    }
+
+    #Results li
+    {
+        margin-left: 20px;
+    }
+
+    #ShowMore
+    {
+        opacity: 100;
+        visibility: visible;
+    }
+}
